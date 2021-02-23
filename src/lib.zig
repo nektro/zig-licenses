@@ -1,6 +1,6 @@
 // SPDX License Data generated from https://github.com/spdx/license-list-data
 //
-// Last generated from version 3.11-54-g1d17200
+// Last generated from version 38e840c
 //
 
 pub const License = struct {
@@ -127,8 +127,8 @@ pub const spdx = struct {
     pub const @"CECILL-C" = License{.isOsiApproved = false, .isFsfLibre = true, .url = "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"};
     pub const @"CERN-OHL-1.1" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1"};
     pub const @"CERN-OHL-1.2" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"};
-    pub const @"CERN-OHL-P-2.0" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2"};
-    pub const @"CERN-OHL-S-2.0" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2"};
+    pub const @"CERN-OHL-P-2.0" = License{.isOsiApproved = true, .isFsfLibre = false, .url = "https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2"};
+    pub const @"CERN-OHL-S-2.0" = License{.isOsiApproved = true, .isFsfLibre = false, .url = "https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2"};
     pub const @"CERN-OHL-W-2.0" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2"};
     pub const @"CNRI-Jython" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "http://www.jython.org/license.html"};
     pub const @"CNRI-Python" = License{.isOsiApproved = true, .isFsfLibre = false, .url = "https://opensource.org/licenses/CNRI-Python"};
@@ -321,6 +321,7 @@ pub const spdx = struct {
     pub const @"OFL-1.1-RFN" = License{.isOsiApproved = true, .isFsfLibre = false, .url = "http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web"};
     pub const @"OFL-1.1-no-RFN" = License{.isOsiApproved = true, .isFsfLibre = false, .url = "http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web"};
     pub const @"OGC-1.0" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "https://www.ogc.org/ogc/software/1.0"};
+    pub const @"OGDL-Taiwan-1.0" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "https://data.gov.tw/license"};
     pub const @"OGL-Canada-2.0" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "https://open.canada.ca/en/open-government-licence-canada"};
     pub const @"OGL-UK-1.0" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/"};
     pub const @"OGL-UK-2.0" = License{.isOsiApproved = false, .isFsfLibre = false, .url = "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"};
@@ -496,6 +497,8 @@ pub const osi = &[_][]const u8{
     "CATOSL-1.1",
     "CDDL-1.0",
     "CECILL-2.1",
+    "CERN-OHL-P-2.0",
+    "CERN-OHL-S-2.0",
     "CNRI-Python",
     "CPAL-1.0",
     "CPL-1.0",
