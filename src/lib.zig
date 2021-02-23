@@ -1,4 +1,4 @@
-// SPDX License Data generated from https://raw.githubusercontent.com/spdx/license-list-data/master/json/licenses.json
+// SPDX License Data generated from https://github.com/spdx/license-list-data
 //
 // Last generated from version 3.11-54-g1d17200
 

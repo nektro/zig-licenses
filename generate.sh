@@ -19,7 +19,7 @@ sub_filter() {
     echo "$1" | jq --raw-output --compact-output "$2"
 }
 
-echo "// SPDX License Data generated from $data_url" > $out_path
+echo "// SPDX License Data generated from https://github.com/spdx/license-list-data" > $out_path
 do_print "//"
 do_print "//" "Last generated from version" $(do_filter '.licenseListVersion')
 do_print
