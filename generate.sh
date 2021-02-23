@@ -22,8 +22,10 @@ sub_filter() {
 echo "// SPDX License Data generated from https://github.com/spdx/license-list-data" > $out_path
 do_print "//"
 do_print "//" "Last generated from version" $(do_filter '.licenseListVersion')
-do_print
+do_print "//"
 
+#
+#
 do_print
 do_print "pub const License = struct {"
 print_tab; do_print "isOsiApproved: bool,"

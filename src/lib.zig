@@ -1,7 +1,7 @@
 // SPDX License Data generated from https://github.com/spdx/license-list-data
 //
 // Last generated from version 3.11-54-g1d17200
-
+//
 
 pub const License = struct {
     isOsiApproved: bool,
