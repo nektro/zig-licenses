@@ -38,7 +38,7 @@ do_print "};"
 echo "spdx:"
 do_print
 do_print "pub const spdx = struct {"
-list=$(do_filter '.licenses[] | { licenseId, isOsiApproved, isFsfLibre, url:.seeAlso[0] }')
+list=$(do_filter '.licenses | sort_by(.licenseId)[] | { licenseId, isOsiApproved, isFsfLibre, url:.seeAlso[0] }')
 for lic in $list
 do
     lic_id=$(sub_filter $lic '.licenseId')
