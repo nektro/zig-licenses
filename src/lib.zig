@@ -1,6 +1,6 @@
 // SPDX License Data generated from https://github.com/spdx/license-list-data
 //
-// Last generated from version 3.12
+// Last generated from version f54424b
 //
 
 pub const License = struct {
