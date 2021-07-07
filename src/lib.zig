@@ -1,6 +1,6 @@
 // SPDX License Data generated from https://github.com/spdx/license-list-data
 //
-// Last generated from version f54424b
+// Last generated from version cab3743
 //
 
 pub const License = struct {
@@ -57,6 +57,7 @@ pub const spdx = struct {
     pub const @"BSD-3-Clause-Clear" = License{.isOsiApproved = false, .url = "http://labs.metacarta.com/license-explanation.html#license"};
     pub const @"BSD-3-Clause-LBNL" = License{.isOsiApproved = true, .url = "https://fedoraproject.org/wiki/Licensing/LBNLBSD"};
     pub const @"BSD-3-Clause-Modification" = License{.isOsiApproved = false, .url = "https://fedoraproject.org/wiki/Licensing:BSD#Modification_Variant"};
+    pub const @"BSD-3-Clause-No-Military-License" = License{.isOsiApproved = false, .url = "https://gitlab.syncad.com/hive/dhive/-/blob/master/LICENSE"};
     pub const @"BSD-3-Clause-No-Nuclear-License" = License{.isOsiApproved = false, .url = "http://download.oracle.com/otn-pub/java/licenses/bsd.txt?AuthParam=1467140197_43d516ce1776bd08a58235a7785be1cc"};
     pub const @"BSD-3-Clause-No-Nuclear-License-2014" = License{.isOsiApproved = false, .url = "https://java.net/projects/javaeetutorial/pages/BerkeleyLicense"};
     pub const @"BSD-3-Clause-No-Nuclear-Warranty" = License{.isOsiApproved = false, .url = "https://jogamp.org/git/?p=gluegen.git;a=blob_plain;f=LICENSE.txt"};
@@ -82,6 +83,7 @@ pub const spdx = struct {
     pub const @"CC-BY-1.0" = License{.isOsiApproved = false, .url = "https://creativecommons.org/licenses/by/1.0/legalcode"};
     pub const @"CC-BY-2.0" = License{.isOsiApproved = false, .url = "https://creativecommons.org/licenses/by/2.0/legalcode"};
     pub const @"CC-BY-2.5" = License{.isOsiApproved = false, .url = "https://creativecommons.org/licenses/by/2.5/legalcode"};
+    pub const @"CC-BY-2.5-AU" = License{.isOsiApproved = false, .url = "https://creativecommons.org/licenses/by/2.5/au/legalcode"};
     pub const @"CC-BY-3.0" = License{.isOsiApproved = false, .url = "https://creativecommons.org/licenses/by/3.0/legalcode"};
     pub const @"CC-BY-3.0-AT" = License{.isOsiApproved = false, .url = "https://creativecommons.org/licenses/by/3.0/at/legalcode"};
     pub const @"CC-BY-3.0-US" = License{.isOsiApproved = false, .url = "https://creativecommons.org/licenses/by/3.0/us/legalcode"};
@@ -119,6 +121,7 @@ pub const spdx = struct {
     pub const @"CC0-1.0" = License{.isOsiApproved = false, .url = "https://creativecommons.org/publicdomain/zero/1.0/legalcode"};
     pub const @"CDDL-1.0" = License{.isOsiApproved = true, .url = "https://opensource.org/licenses/cddl1"};
     pub const @"CDDL-1.1" = License{.isOsiApproved = false, .url = "http://glassfish.java.net/public/CDDL+GPL_1_1.html"};
+    pub const @"CDL-1.0" = License{.isOsiApproved = false, .url = "http://www.opensource.apple.com/cdl/"};
     pub const @"CDLA-Permissive-1.0" = License{.isOsiApproved = false, .url = "https://cdla.io/permissive-1-0"};
     pub const @"CDLA-Sharing-1.0" = License{.isOsiApproved = false, .url = "https://cdla.io/sharing-1-0"};
     pub const @"CECILL-1.0" = License{.isOsiApproved = false, .url = "http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html"};
@@ -293,7 +296,7 @@ pub const spdx = struct {
     pub const @"NAIST-2003" = License{.isOsiApproved = false, .url = "https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text"};
     pub const @"NASA-1.3" = License{.isOsiApproved = true, .url = "http://ti.arc.nasa.gov/opensource/nosa/"};
     pub const @"NBPL-1.0" = License{.isOsiApproved = false, .url = "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=37b4b3f6cc4bf34e1d3dec61e69914b9819d8894"};
-    pub const @"NCGL-UK-2.0" = License{.isOsiApproved = false, .url = "https://github.com/spdx/license-list-XML/blob/master/src/Apache-2.0.xml"};
+    pub const @"NCGL-UK-2.0" = License{.isOsiApproved = false, .url = "http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/"};
     pub const @"NCSA" = License{.isOsiApproved = true, .url = "http://otm.illinois.edu/uiuc_openSource"};
     pub const @"NGPL" = License{.isOsiApproved = true, .url = "https://opensource.org/licenses/NGPL"};
     pub const @"NIST-PD" = License{.isOsiApproved = false, .url = "https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt"};
@@ -350,6 +353,7 @@ pub const spdx = struct {
     pub const @"OLDAP-2.8" = License{.isOsiApproved = true, .url = "http://www.openldap.org/software/release/license.html"};
     pub const @"OML" = License{.isOsiApproved = false, .url = "https://fedoraproject.org/wiki/Licensing/Open_Market_License"};
     pub const @"OPL-1.0" = License{.isOsiApproved = false, .url = "http://old.koalateam.com/jackaroo/OPL_1_0.TXT"};
+    pub const @"OPUBL-1.0" = License{.isOsiApproved = false, .url = "http://opencontent.org/openpub/"};
     pub const @"OSET-PL-2.1" = License{.isOsiApproved = true, .url = "http://www.osetfoundation.org/public-license"};
     pub const @"OSL-1.0" = License{.isOsiApproved = true, .url = "https://opensource.org/licenses/OSL-1.0"};
     pub const @"OSL-1.1" = License{.isOsiApproved = false, .url = "https://fedoraproject.org/wiki/Licensing/OSL1.1"};
@@ -437,7 +441,7 @@ pub const spdx = struct {
     pub const @"YPL-1.1" = License{.isOsiApproved = false, .url = "http://www.zimbra.com/license/yahoo_public_license_1.1.html"};
     pub const @"ZPL-1.1" = License{.isOsiApproved = false, .url = "http://old.zope.org/Resources/License/ZPL-1.1"};
     pub const @"ZPL-2.0" = License{.isOsiApproved = true, .url = "http://old.zope.org/Resources/License/ZPL-2.0"};
-    pub const @"ZPL-2.1" = License{.isOsiApproved = false, .url = "http://old.zope.org/Resources/ZPL/"};
+    pub const @"ZPL-2.1" = License{.isOsiApproved = true, .url = "http://old.zope.org/Resources/ZPL/"};
     pub const @"Zed" = License{.isOsiApproved = false, .url = "https://fedoraproject.org/wiki/Licensing/Zed"};
     pub const @"Zend-2.0" = License{.isOsiApproved = false, .url = "https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt"};
     pub const @"Zimbra-1.3" = License{.isOsiApproved = false, .url = "http://web.archive.org/web/20100302225219/http://www.zimbra.com/license/zimbra-public-license-1-3.html"};
@@ -606,5 +610,6 @@ pub const osi = &[_][]const u8{
     "Watcom-1.0",
     "Xnet",
     "ZPL-2.0",
+    "ZPL-2.1",
     "Zlib",
 };
