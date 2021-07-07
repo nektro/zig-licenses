@@ -1,4 +1,4 @@
-# zig-languages
+# zig-licenses
 
 generated data from https://spdx.org/licenses/.
 
