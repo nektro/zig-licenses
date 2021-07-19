@@ -20,23 +20,14 @@ pub fn main() !void {
         try w.print("// Last generated from version {s}\n", .{val.get("licenseListVersion").?.String});
         try w.writeAll("//\n");
 
-        try w.writeAll("\n");
-        try w.writeAll(
-            \\pub const License = struct {
-            \\    url: []const u8,
-            \\};
-            \\
-        );
-
         var licenses = val.get("licenses").?.Array;
         std.sort.sort(json.Value, licenses, {}, spdxlicenseLessThan);
 
         try w.writeAll("\n");
-        try w.writeAll("pub const spdx = struct {\n");
+        try w.writeAll("pub const spdx = &[_][]const u8{\n");
         for (licenses) |lic| {
-            try w.print("    pub const @\"{s}\" = License{{ .url = \"{s}\" }};\n", .{
+            try w.print("    \"{s}\",\n", .{
                 lic.get("licenseId").?.String,
-                lic.get("reference").?.String,
             });
         }
         try w.writeAll("};\n");
