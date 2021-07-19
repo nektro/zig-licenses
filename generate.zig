@@ -38,7 +38,7 @@ pub fn main() !void {
             try w.print("    pub const @\"{s}\" = License{{.isOsiApproved = {}, .url = \"{s}\"}};\n", .{
                 lic.get("licenseId").?.String,
                 lic.get("isOsiApproved").?.Bool,
-                lic.get("seeAlso").?.Array[0].String,
+                lic.get("reference").?.String,
             });
         }
         try w.writeAll("};\n");
