@@ -40,6 +40,29 @@ pub fn main() !void {
         }
         try w.writeAll("};\n");
     }
+
+    {
+        std.log.info("blueoak", .{});
+        const val = try simple_fetch(alloc, "https://blueoakcouncil.org/list.json");
+        try w.writeAll("\n");
+        try w.writeAll("// Blue Oak Council data generated from https://blueoakcouncil.org/list\n");
+        try w.writeAll("//\n");
+        try w.print("// Last generated from version {s}\n", .{val.get("version").?.String});
+        try w.writeAll("//\n");
+
+        try w.writeAll("\n");
+        try w.writeAll("pub const blueoak = struct {\n");
+        for (val.get("ratings").?.Array) |rating| {
+            try w.print("    pub const {s} = &[_][]const u8{{\n", .{std.ascii.allocLowerString(alloc, rating.get("name").?.String)});
+            for (rating.get("licenses").?.Array) |lic| {
+                try w.print("        \"{s}\",\n", .{
+                    lic.get("id").?.String,
+                });
+            }
+            try w.print("    }};\n", .{});
+        }
+        try w.writeAll("};\n");
+    }
 }
 
 pub fn simple_fetch(alloc: *std.mem.Allocator, url: []const u8) !json.Value {
