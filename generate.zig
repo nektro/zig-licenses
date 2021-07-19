@@ -35,7 +35,7 @@ pub fn main() !void {
         try w.writeAll("\n");
         try w.writeAll("pub const spdx = struct {\n");
         for (licenses) |lic| {
-            try w.print("    pub const @\"{s}\" = License{{.isOsiApproved = {}, .url = \"{s}\"}};\n", .{
+            try w.print("    pub const @\"{s}\" = License{{ .isOsiApproved = {}, .url = \"{s}\" }};\n", .{
                 lic.get("licenseId").?.String,
                 lic.get("isOsiApproved").?.Bool,
                 lic.get("reference").?.String,
