@@ -4,5 +4,4 @@ main: src/lib.zig
 license: MIT
 
 dev_dependencies:
-  - src: git https://github.com/truemedian/zfetch
   - src: git https://github.com/nektro/zig-json

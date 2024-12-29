@@ -1,23 +1,20 @@
 const std = @import("std");
 const deps = @import("./deps.zig");
 
-pub fn build(b: *std.build.Builder) void {
-    // Standard target options allows the person running `zig build` to choose
-    // what target to build for. Here we do not override the defaults, which
-    // means any target is allowed, and the default is native. Other options
-    // for restricting supported target set are available.
+pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
+    const mode = b.option(std.builtin.Mode, "mode", "") orelse .Debug;
 
-    // Standard release options allow the person running `zig build` to select
-    // between Debug, ReleaseSafe, ReleaseFast, and ReleaseSmall.
-    const mode = b.standardReleaseOptions();
+    const exe = b.addExecutable(.{
+        .name = "zig-licenses",
+        .root_source_file = b.path("src/main.zig"),
+        .target = target,
+        .optimize = mode,
+    });
+    deps.addAllTo(exe);
+    b.installArtifact(exe);
 
-    const exe = b.addExecutable("zig-licenses", "src/main.zig");
-    exe.setTarget(target);
-    exe.setBuildMode(mode);
-    exe.install();
-
-    const run_cmd = exe.run();
+    const run_cmd = b.addRunArtifact(exe);
     run_cmd.step.dependOn(b.getInstallStep());
     if (b.args) |args| {
         run_cmd.addArgs(args);
@@ -28,13 +25,16 @@ pub fn build(b: *std.build.Builder) void {
 
     //
 
-    const exe2 = b.addExecutable("generate", "generate.zig");
-    exe2.setTarget(target);
-    exe2.setBuildMode(mode);
+    const exe2 = b.addExecutable(.{
+        .name = "generate",
+        .root_source_file = b.path("generate.zig"),
+        .target = target,
+        .optimize = mode,
+    });
     deps.addAllTo(exe2);
-    exe2.install();
+    b.installArtifact(exe2);
 
-    const run_cmd2 = exe2.run();
+    const run_cmd2 = b.addRunArtifact(exe2);
     run_cmd2.step.dependOn(b.getInstallStep());
     if (b.args) |args| {
         run_cmd2.addArgs(args);
