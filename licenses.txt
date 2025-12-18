@@ -3,8 +3,13 @@ MIT:
 - This
 - git https://github.com/nektro/zig-extras
 - git https://github.com/nektro/zig-json
+- git https://github.com/nektro/zig-sys-linux
 - git https://github.com/nektro/zig-tracer
 
 MPL-2.0:
 = https://spdx.org/licenses/MPL-2.0
 - git https://github.com/nektro/zig-intrusive-parser
+- git https://github.com/nektro/zig-nio
+
+Unspecified:
+- system_lib c
