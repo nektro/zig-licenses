@@ -4,3 +4,4 @@ main: src/lib.zig
 license: MIT
 root_dependencies:
   - src: git https://github.com/nektro/zig-json
+  - src: git https://github.com/nektro/zig-nfs
